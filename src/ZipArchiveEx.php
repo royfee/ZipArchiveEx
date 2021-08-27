@@ -1,4 +1,6 @@
 <?php
+	namespace royfee\zip;
+
 /*
 	ZipArchive 文件的扩展包
 */
