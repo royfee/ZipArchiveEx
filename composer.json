@@ -3,7 +3,7 @@
     "description": "ZipArchive",
     "autoload": {
         "psr-4": {
-            "royfee\\ZipArchiveEx\\": "src/"
+            "royfee\\ziparchiveex\\": "src/"
         }
     },
     "require": {
