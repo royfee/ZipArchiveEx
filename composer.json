@@ -1,5 +1,5 @@
 {
-    "name": "administrator/zip-archive-ex",
+    "name": "royfee/zip-archive-ex",
     "description": "ZipArchive",
     "require": {},
     "autoload": {
