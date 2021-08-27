@@ -3,8 +3,8 @@
     "description": "ZipArchive",
     "require": {},
     "autoload": {
-        "psr-4": {
-		"ZipArchiveEx": "src"
-	}
+            "psr-4": {
+            "ZipArchiveEx\\": "src"
+        }
     }
 }
