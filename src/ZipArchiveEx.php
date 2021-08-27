@@ -1,27 +1,27 @@
 <?php
 /*
-	ZipArchive ÎÄ¼şµÄÀ©Õ¹°ü
+	ZipArchive æ–‡ä»¶çš„æ‰©å±•åŒ…
 */
 
 class ZipArchiveEx extends \ZipArchive {
 	public $exclude_dir = [];
 	/**
-	 * ´´½¨ÎÄ¼ş
-	 * flags Ä¬ÈÏÎÄ¼ş´æÔÚ¾ÍÖØĞ´£¬ÎÄ¼ş²»´æÔÚ¾Í´´½¨
+	 * åˆ›å»ºæ–‡ä»¶
+	 * flags é»˜è®¤æ–‡ä»¶å­˜åœ¨å°±é‡å†™ï¼Œæ–‡ä»¶ä¸å­˜åœ¨å°±åˆ›å»º
 	 */
     public function open($filename,$flags = NULL){
         parent::open($filename, $flags ? $flags : \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
     }
 
     /**
-     * µİ¹éÌí¼ÓÄ¿Â¼
+     * é€’å½’æ·»åŠ ç›®å½•
      */
 	public function addDir($dirname) {
 		return $this->recursiveAddDir($dirname);
 	}
 
     /**
-     * Ìí¼ÓÔ¶³ÌÎÄ¼ş±ÈÈçOSSÀïµÄÎÄ¼ş
+     * æ·»åŠ è¿œç¨‹æ–‡ä»¶æ¯”å¦‚OSSé‡Œçš„æ–‡ä»¶
      * $files  array|string
      */
     public function addRemoteFiles($files){
@@ -36,9 +36,9 @@ class ZipArchiveEx extends \ZipArchive {
     }
 
     /**
-     * »ñÈ¡Ô¶³ÌÎÄ¼şÄÚÈİ
-     * @param Ô¶³ÌÎÄ¼şÃû
-     * @return string  ÎÄ¼şÄÚÈİ
+     * è·å–è¿œç¨‹æ–‡ä»¶å†…å®¹
+     * @param è¿œç¨‹æ–‡ä»¶å
+     * @return string  æ–‡ä»¶å†…å®¹
      */
     public function getRemoteContents($remotefile){
         $k = 0;
@@ -53,7 +53,7 @@ class ZipArchiveEx extends \ZipArchive {
 
     /**
 	 * Function: excludeDir
-     * ÅÅ³ıÄ¿Â¼
+     * æ’é™¤ç›®å½•
 	 */
 	public function excludeDir($dirname){
 		if(substr($dirname, -1) == '/'){
