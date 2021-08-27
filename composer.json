@@ -1,9 +1,9 @@
 {
-    "name": "royfee/zip-archive-ex",
+    "name": "royfee/ziparchiveex",
     "description": "ZipArchive",
     "autoload": {
         "psr-4": {
-            "royfee\\zip-archive-ex\\": "src/"
+            "royfee\\ZipArchiveEx\\": "src/"
         }
     },
     "require": {
